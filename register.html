@@ -1,0 +1,224 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>FOA | Registro de usuario </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+    <!--Cabecera -->
+    <header class="header">
+		<div class="container">
+			<div class="row">
+			  <div class="col-md-12">
+					 <div class="logo">
+						<a href="index.html"><img class="imglogo" src="images/logofo.jpg"/></a>
+					 </div>
+					 <div class="menu">
+						  <a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
+						    <ul class="nav" id="nav">
+						    	<li><a href="index.html">Home</a></li>
+						    	<li><a href="galeria.html">Tienda</a></li>
+                                <li><a href="qsomos.html">Quienes Somos</a></li>
+								<li><a href="contact.html">Contactanos</a></li>
+                                <a class="ausers" href="login.html"><img class="users" src="images/user.png"></a>
+                                <a href="#"><img class="carshop" src="images/cart.png"></a>
+								<div class="clear"></div>
+                                <script type="text/javascript" src="js/responsive-nav.js"></script>
+                            </ul>
+				    </div>								
+	    		    <div class="clear"></div>
+	    	    </div>
+			  </div>
+			</div>
+		</div>
+	</div>
+    </header>
+    
+<!--Registro de usuario-->
+<div class="main">
+    <div class="shop_top">
+       <div class="container content">
+                      <form> 
+                              <div class="register-top-grid">
+                                  <hr>
+                                      <h3>INFORMACION PERSONAL</h3>
+                                      <br>
+                                      <div>
+                                          <span>Nombre <label>*</label></span>
+                                          <input type="text" placeholder="Primer Nombre" required=""> 
+                                      </div>
+                                      <div>
+                                          <span>Apellido <label>*</label></span>
+                                          <input type="text" placeholder="Apellido Paterno" required=""> 
+                                      </div>
+                                      <div>
+                                          <span>Correo Electronico<label>*</label></span>
+                                          <input type="text" placeholder="******@gmail.com" required=""> 
+                                      </div>
+                                      <div>
+                                        <span>Telefono<label>*</label></span>
+                                        <input type="tel" id="fono" name="fono" pattern="^\d{8}$" placeholder="912345678" maxlength="9">
+                                    </div>
+                                    <div>
+                                        <span>Seleccione su Genero<label>*</label></span>
+                                        <select name="regiones">
+                                            <option>- Seleccione una opcion -</option>
+                                            <option>Masculino</option>
+                                            <option>Femenino</option>
+                                            <option>Otro</option>
+                                            <option>Prefiero no decirlo</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <span>Fecha de nacimiento<label>*</label></span>
+                                        <input type="date" id="birthday" name="birthday" min="1910-01-01"><br><br> 
+                                    </div>
+                                    <div>
+                                        <span>Seleccione Región<label>:</label></span>
+                                        <select name="regiones">
+                                                <option>- Seleccione una opcion -</option>
+                                                <option>Región de Arica y Parinacota</option>
+                                                <option>Región de Tarapacá</option>
+                                                <option>Región de Antofagasta</option>
+                                                <option>Región de Atacama</option>
+                                                <option>Región de Coquimbo</option>
+                                                <option>Región de Valparaíso</option>
+                                                <option>Región Metropolitana de Santiago</option>
+                                                <option>Región del Libertador General Bernardo O’Higgins</option>
+                                                <option>Región del Maule</option>
+                                                <option>Región del Ñuble</option>
+                                                <option>Región del Biobío</option>
+                                                <option>Región de La Araucanía</option>
+                                                <option>Región de Los Ríos</option>
+                                                <option>Región de Los Lagos</option>
+                                                <option>Región de Aysén del General Carlos Ibáñez del Campo</option>
+                                                <option>Región de Magallanes y la Antártica Chilena</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <span>Direccion <label>*</label></span>
+                                        <input type="text" placeholder="Ingrese su direccion"> 
+                                    </div>
+                                      <div class="clear"> </div>
+                                          <a class="news-letter" href="#">
+                                              <label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i></i>Quiero recibir noticias y ofertas exclusivas</label>
+                                          </a>
+                                          <br>
+                                      <div class="clear"> </div>
+                              </div>
+                              <br>
+                              <hr>
+                              <div class="clear"> </div>
+                              <div class="register-bottom-grid">
+                                      <h3>INFORMACION DE INICIO DE SESION</h3>
+                                      <br>
+                                      <div>
+                                          <span>Contraseña<label>*</label></span>
+                                          <input type="password" id="passUsuario" name="passUsuario" value="" placeholder="Digite su contraseña" required="" minlength="8">
+                                      </div>
+                                      <div>
+                                          <span>Confirmar Contraseña<label>*</label></span>
+                                          <input type="password" id="passUsuario" name="passUsuario" value="" placeholder="Confirme Contraseña" required="" minlength="8">
+                                      </div>
+                                      <div class="clear"> </div>
+                              </div>
+                              <div class="clear"> </div>
+                              <div class="col-md-5">
+                              <div class="button1">
+                                <a href="#"><input type="submit" name="register" value="Registrarse"></a></div>
+                      </form>
+                  </div>
+         </div>
+    </div>
+    <hr>
+    <!--Marcas-->
+    <br>
+        <div class="container marcas">
+            <div class="row">
+                <div class="col-lg-3">
+                    <img src="images/GH.png" width="250" height="180">
+                    
+                </div>
+
+                <div class="col-lg-3">
+                    <img src="images/SSC.png" width="230" height="200">
+                </div>
+
+                <div class="col-lg-3">
+                    <img src="images/F4F.png" width="240" height="110">
+                </div>
+
+                <div class="col-lg-3">
+                    <img src="images/Funko.png" width="230" height="130">
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+<!--Footer-->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <ul class="footer_box">
+                    <h4>Figuras</h4>
+                    <li><a href="#">Anime</a></li>
+                    <li><a href="#">VideoJuegos</a></li>
+                    <li><a href="#">Funko POP</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <ul class="footer_box">
+                    <h4>Nuestro Equipo</h4>
+                    <li><a href="#">Brayan Aravena</a></li>
+                    <li><a href="#">Joshua Kornich</a></li>
+                    <li><a href="#">Matias Maldonado</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <ul class="footer_box">
+                    <h4>Soporte Cliente</h4>
+                    <li><a href="#">Contactanos</a></li>
+                    <li><a href="#">Envios & Tracking</a></li>
+                    <li><a href="#">Garantia</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <ul class="footer_box">
+                    <h4>Newsletter</h4>
+                    <div class="footer_search">
+                       <form>
+                        <input type="text" value="Ingresa tu email">
+                        <input type="submit" value="GO">
+                       </form>
+                    </div>
+                    <ul class="social">	
+                      <li class="facebook"><a href="#"><span> </span></a></li>
+                      <li class="twitter"><a href="#"><span> </span></a></li>
+                      <li class="instagram"><a href="#"><span> </span></a></li>		
+                      <li class="youtube"><a href="#"><span> </span></a></li>										  				
+                    </ul>
+                       
+                </ul>
+            </div>
+        </div>
+
+        <div class="row footer_bottom">
+            <div class="copy">
+               <p>© 2021 Figure Out All | All Rights Reserved <a href="#"></a></p>
+            </div>
+
+</body>
+</html>
