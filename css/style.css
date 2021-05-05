@@ -247,7 +247,7 @@ fieldset.input input[type="submit"]:hover {
 }
 /*--register--*/
 .register-top-grid h3, .register-bottom-grid h3 {
-	color:#000;
+	color:#ECECEC;
 	font-size: 1em;
 	padding-bottom: 5px;
 	margin: 0;
@@ -374,6 +374,15 @@ fieldset.input input[type="submit"]:hover {
 
 .fondo1{
 	background-image: url(gif3.gif);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment:unset;
+	
+}
+
+.fondo2{
+	background-image: url(gif4.gif);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
