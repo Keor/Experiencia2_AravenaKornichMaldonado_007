@@ -245,9 +245,128 @@ fieldset.input input[type="submit"]:hover {
 	float: right;
 	margin-top: 8%;
 }
+
+
+/*--Main--*/
+
+
+
+
+.content-top{
+	padding:10% 0;
+	
+}
+.content-top h2{
+	color: #000;
+	font-size:3em;
+	font-weight: 800;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 1.5%;
+}
+.content-top p{
+	color: #000;
+	font-size: 0.95em;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 600;
+	margin-bottom:1%;
+}
+.content-top h3{
+	color:#000;
+	font-size:1.5em;
+	text-transform:uppercase;
+	font-weight:700;
+	text-align:center;
+	margin:2% 0 0 0;
+
+}
+
+.fondo1{
+	background-image: url(gif3.gif);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment:unset;
+	
+}
+
+
+
+/*--login--*/
+.login-page {
+	border-right: 1px solid #EEE;
+	padding-right: 4%;
+
+
+}
+h4.title {
+	color:rgb(255, 255, 255);
+	margin-bottom: 0.5em;
+	font-size: 1em;
+	line-height: 1.2;
+	font-weight: normal;
+	margin-top: 0px;
+	letter-spacing: -1px;
+	text-transform: uppercase;
+	border-bottom: 1px solid #ECECEC;
+	padding-bottom: 13px;
+}
+.login-page p {
+	color: rgb(255, 255, 255);
+	font-size: 0.85em;
+	line-height: 1.8em;
+}
+
+#login-form label {
+	color: rgb(255, 255, 255);
+	line-height: 2.8em;
+	font-size: 0.95em;
+	font-weight: 400;
+	margin: 0;
+	display: block;
+}
+input.inputbox, input.required, div.k2AccountPage input[type="text"] {
+	background: #FFF;
+	outline-color: #00BFF0;
+	border: 1px solid #EEE;
+	color: inherit;
+	padding: 7px 20px;
+	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.85em;
+}
+.remember {
+	margin-top: 6%;
+}
+p#login-form-remember {
+	float: left;
+}
+fieldset.input input[type="submit"] {
+	background: #000;
+	border: none;
+	color: #FFF;
+	padding: 10px 30px;
+	cursor: pointer;
+	float: right;
+	font-family: 'Open Sans', sans-serif;
+	outline: none;
+	font-size:1em;
+}
+fieldset.input input[type="submit"]:hover {
+	background:#555;
+}
+#login-form label a {
+	color: #777;
+	color:0.85em;
+}
+#login-form label a:hover {
+	color:#00BFF0;
+}
+
 /*--register--*/
 .register-top-grid h3, .register-bottom-grid h3 {
-	color:#ECECEC;
+	color:#000000;
 	font-size: 1em;
 	padding-bottom: 5px;
 	margin: 0;
@@ -336,132 +455,6 @@ fieldset.input input[type="submit"]:hover {
 .checkbox:last-child {
 	margin-bottom: 0;
 }
-
-/*--Main--*/
-
-
-
-
-.content-top{
-	padding:10% 0;
-	
-}
-.content-top h2{
-	color: #000;
-	font-size:3em;
-	font-weight: 800;
-	text-align: center;
-	text-transform: uppercase;
-	margin-bottom: 1.5%;
-}
-.content-top p{
-	color: #000;
-	font-size: 0.95em;
-	text-transform: uppercase;
-	text-align: center;
-	font-weight: 600;
-	margin-bottom:1%;
-}
-.content-top h3{
-	color:#000;
-	font-size:1.5em;
-	text-transform:uppercase;
-	font-weight:700;
-	text-align:center;
-	margin:2% 0 0 0;
-
-}
-
-.fondo1{
-	background-image: url(gif3.gif);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment:unset;
-	
-}
-
-.fondo2{
-	background-image: url(gif4.gif);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment:unset;
-	
-}
-
-
-/*--login--*/
-.login-page {
-	border-right: 1px solid #EEE;
-	padding-right: 4%;
-
-
-}
-h4.title {
-	color:rgb(255, 255, 255);
-	margin-bottom: 0.5em;
-	font-size: 1em;
-	line-height: 1.2;
-	font-weight: normal;
-	margin-top: 0px;
-	letter-spacing: -1px;
-	text-transform: uppercase;
-	border-bottom: 1px solid #ECECEC;
-	padding-bottom: 13px;
-}
-.login-page p {
-	color: rgb(255, 255, 255);
-	font-size: 0.85em;
-	line-height: 1.8em;
-}
-
-#login-form label {
-	color: rgb(255, 255, 255);
-	line-height: 2.8em;
-	font-size: 0.95em;
-	font-weight: 400;
-	margin: 0;
-	display: block;
-}
-input.inputbox, input.required, div.k2AccountPage input[type="text"] {
-	background: #FFF;
-	outline-color: #00BFF0;
-	border: 1px solid #EEE;
-	color: inherit;
-	padding: 7px 20px;
-	width: 100%;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 0.85em;
-}
-.remember {
-	margin-top: 6%;
-}
-p#login-form-remember {
-	float: left;
-}
-fieldset.input input[type="submit"] {
-	background: #000;
-	border: none;
-	color: #FFF;
-	padding: 10px 30px;
-	cursor: pointer;
-	float: right;
-	font-family: 'Open Sans', sans-serif;
-	outline: none;
-	font-size:1em;
-}
-fieldset.input input[type="submit"]:hover {
-	background:#555;
-}
-#login-form label a {
-	color: #777;
-	color:0.85em;
-}
-#login-form label a:hover {
-	color:#00BFF0;
-}
-
 
 /*Sobre nosotros*/
 #about-section {
