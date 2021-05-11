@@ -151,11 +151,14 @@
                         <hr>
                             <h3>INFORMACIÓN PERSONAL</h3>
                             <br>
+                            <div class="col-ml-6">
                             <label>Nombre de Usuario: </label>
                             <input type="text" name="nombre" id="miCampo1" required>
-                            <br><br>
+                            </div>
+                            <div class="col-ml-6">
                             <label>Apellidos: </label>
                             <input type="text" name="apellido" id="miCampo2" required>
+                            </div>
                             <br><br>
                             <label>Correo Electrónico: </label>
                             <input type="text" name="email" required placeholder="nombre@dominio.cl">
@@ -163,12 +166,14 @@
                             <label>Telefono: </label>
                             <input type="text" name="fono" minlength="9" id="miCampo3" required>
                             <br><br>
-                            <label>Fecha: </label>
+                            <label>Fecha de Nacimiento: </label>
                             <input type="date" name="fecha" min="2018-01-01" required>
                             <br><br>
+                            <div class="col-ml-6">
                             <label>Dirección </label>
                             <input type="text" name="direccion" minlength="6" required>  
-                            <br><br>
+                            </div>
+                            <div class="col-ml-6">
                             <label>Seleccione Región</label>
                             <select type="option" name="region" required>
                                 <option value="">- Seleccione una opción -</option>
@@ -189,6 +194,7 @@
                                 <option value="15">Región de Aysén del General Carlos Ibáñez del Campo</option>
                                 <option value="16">Región de Magallanes y la Antártica Chilena</option>
                             </select>
+                            </div>
                         <br><br>
                             <label>Seleccione su Genero</label>
                             <select type="option" name="genero" required>
@@ -203,27 +209,24 @@
                     <div class="clear">
                     <h3>INFORMACIÓN DE INICIO DE SESIÓN</h3>
                     <br>
-                    <div class="col-md-6 shop_box">
+                    <div class="col-ml-6">
                     <label>Contraseña:</label>
-                        <input type="password" id="password" name="password" minlength="6">
-                    </div>
-                        <div class="col-md-6 shop_box">
+                    <input type="password" id="password" name="password" minlength="6"></div>
+                    <div class="col-ml-6">
                     <label>Reingresa contraseña:</label>
-                        <input type="password" name="password2" minlength="6">
+                    <input type="password" name="password2" minlength="6">
                     </div>
-                    <div class="clear"></div>
-                    <div class="button1"></div>
-                    <div class="clear"></div>
-
-                        <a class="news-letter" href="#"><hr>
-                            <label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i></i>Quiero recibir noticias y ofertas exclusivas</label>
-                        </a>
-                        <br>
+                    <a class="news-letter" href="#"><hr>
+                        <label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i></i>Quiero recibir noticias y ofertas exclusivas</label>
+                    </a>
+                    <br>
                     <div class="clear"></div>
                     <div class="button1">
                         <a href="#"><input type="submit" name="register" value="Registrarse"></a></div>
                     <br>
                     <hr>
+                    </div>
+                </div>
             </form>
         </div>
     </div>

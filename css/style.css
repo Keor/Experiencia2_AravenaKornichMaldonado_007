@@ -155,6 +155,7 @@ body a{
 	font-family: 'Open Sans', sans-serif;
 	outline: none;
 	font-size: 1em;
+	text-align: center;
 }
 .button1 input[name="crearc"] {
 	background: rgb(0, 0, 0);
@@ -443,7 +444,7 @@ fieldset.input input[type="submit"]:hover {
 }
 .button1 {
 	float: right;
-	margin-top: 10%;
+	margin-top: 8%;
 }
 
 .checkbox {
@@ -724,7 +725,6 @@ li.youtube a span {
 	-moz-transition: 0.5s all;
 	-o-transition: 0.5s all;
 	clear: both;
-	
 }
 
 *{margin: 0;padding: 0;
