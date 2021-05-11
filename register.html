@@ -12,6 +12,9 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+<script type="text/javascript" src="https://rawcdn.githack.com/franz1628/validacionKeyCampo/bce0e442ee71a4cf8e5954c27b44bc88ff0a8eeb/validCampoFranz.js"></script>
 
 </head>
 <body>
@@ -43,106 +46,190 @@
 			</div>
 		</div>
 	</div>
+    <script>
+        $(function() 
+        {
+          $("#mi-formulario").validate({
+               rules: {
+                    nombre: {
+                        required: true,
+                    },
+
+                    apellido: {
+                        required: true,
+                    },
+                            
+                    email: {
+                        required: true,    
+                        email: true
+                    },
+
+                    region: {
+                        required: true,
+                    },
+
+                    genero:{
+                        required: true,
+                    },
+
+                    password: "required",
+                    fono: "required",
+                    fecha: "required",
+                    
+                    password2: {
+                    required: true,
+                    equalTo: "#password"
+                    }
+                  }, //rules
+            messages: {
+                nombre: {
+                    required: 'Ingrese un Nombre*',
+                },
+
+                apellido: {
+                    required: 'Ingrese un Apellido*',
+                },
+
+                
+                email: {
+                    required: 'Ingrese un correo electrónico*',
+                    email: 'Formato de correo no válido'
+                },
+                password: {
+                    required: 'Ingrese una contraseña*',
+                    minlength: 'Caracteres insuficientes'
+                },
+                
+                fono:{
+                    required: 'Ingrese un número de celular*',
+                    minlength: 'Cantidad de digitos insuficiente'
+                },
+                
+                fecha:{
+                    required: 'Seleccione una fecha válida*',
+                    min: 'Fecha no corresponde'
+                },
+
+                direccion:{
+                    required: "Ingrese su Dirección*",
+                    minlength: "Igrese Dirección válida*"
+                },
+
+                region:{
+                    required: "Elija una opción valida*"
+                },
+
+                genero:{
+                    required: "Elija una opción valida*"
+                },
+
+
+                password2: {
+                required: 'Reingresa la contraseña*',
+                equalTo: 'Las contraseñas ingresadas no coinciden*',
+                minlength: 'Caracteres insuficientes*'
+                }
+              }//messages
+          }); 
+           
+            $('#miCampo1').validCampoFranz(' abcdefghijklmnñopqrstuvwxyzáéíóúö');
+            $('#miCampo2').validCampoFranz(' abcdefghijklmnñopqrstuvwxyzáéíóúö');
+            $('#miCampo3').validCampoFranz ('0123456789'); 
+        
+        });//function
+
+    </script>
+
     </header>
     
 <!--Registro de usuario-->
 <div class="main">
     <div class="shop_top">
        <div class="container content">
-                      <form> 
-                              <div class="register-top-grid">
-                                  <hr>
-                                      <h3>INFORMACIÓN PERSONAL</h3>
-                                      <br>
-                                      <div>
-                                          <span>Nombre <label>*</label></span>
-                                          <input type="text" placeholder="Primer Nombre" required=""> 
-                                      </div>
-                                      <div>
-                                          <span>Apellido <label>*</label></span>
-                                          <input type="text" placeholder="Apellido Paterno" required=""> 
-                                      </div>
-                                      <div>
-                                          <span>Correo Electronico<label>*</label></span>
-                                          <input type="text" placeholder="******@gmail.com" required=""> 
-                                      </div>
-                                      <div>
-                                        <span>Teléfono<label>*</label></span>
-                                        <input type="tel" id="fono" name="fono" pattern="^\d{8}$" placeholder="912345678" maxlength="9">
-                                    </div>
-                                    <div>
-                                        <span>Seleccione su Genero<label>*</label></span>
-                                        <select name="regiones">
-                                            <option>- Seleccione una opción -</option>
-                                            <option>Masculino</option>
-                                            <option>Femenino</option>
-                                            <option>Otro</option>
-                                            <option>Prefiero no decirlo</option>
-                                        </select>
-                                    </div>
-                                    <div>
-                                        <span>Fecha de nacimiento<label>*</label></span>
-                                        <input type="date" id="birthday" name="birthday" min="1910-01-01"><br><br> 
-                                    </div>
-                                    <div>
-                                        <span>Seleccione Región<label>:</label></span>
-                                        <select name="regiones">
-                                                <option>- Seleccione una opción -</option>
-                                                <option>Región de Arica y Parinacota</option>
-                                                <option>Región de Tarapacá</option>
-                                                <option>Región de Antofagasta</option>
-                                                <option>Región de Atacama</option>
-                                                <option>Región de Coquimbo</option>
-                                                <option>Región de Valparaíso</option>
-                                                <option>Región Metropolitana de Santiago</option>
-                                                <option>Región del Libertador General Bernardo O’Higgins</option>
-                                                <option>Región del Maule</option>
-                                                <option>Región del Ñuble</option>
-                                                <option>Región del Biobío</option>
-                                                <option>Región de La Araucanía</option>
-                                                <option>Región de Los Ríos</option>
-                                                <option>Región de Los Lagos</option>
-                                                <option>Región de Aysén del General Carlos Ibáñez del Campo</option>
-                                                <option>Región de Magallanes y la Antártica Chilena</option>
-                                        </select>
-                                    </div>
-                                    <div>
-                                        <span>Dirección <label>*</label></span>
-                                        <input type="text" placeholder="Ingrese su direccion"> 
-                                    </div>
-                                      <div class="clear"> </div>
-                                          <a class="news-letter" href="#">
-                                              <label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i></i>Quiero recibir noticias y ofertas exclusivas</label>
-                                          </a>
-                                          <br>
-                                      <div class="clear"> </div>
-                              </div>
-                              <br>
-                              <hr>
-                              <div class="clear"> </div>
-                              <div class="register-bottom-grid">
-                                      <h3>INFORMACIÓN DE INICIO DE SESIÓN</h3>
-                                      <br>
-                                      <div>
-                                          <span>Contraseña<label>*</label></span>
-                                          <input type="password" id="passUsuario" name="passUsuario" value="" placeholder="Digite su contraseña" required="" minlength="8">
-                                      </div>
-                                      <div>
-                                          <span>Confirmar Contraseña<label>*</label></span>
-                                          <input type="password" id="passUsuario" name="passUsuario" value="" placeholder="Confirme Contraseña" required="" minlength="8">
-                                      </div>
-                                      <div class="clear"> </div>
-                              </div>
-                              <div class="clear"> </div>
-                              <div class="col-md-5">
-                              <div class="button1">
-                                <a href="#"><input type="submit" name="register" value="Registrarse"></a></div>
-                      </form>
-                  </div>
-         </div>
+            <form id="mi-formulario" action="qsomos.html">
+                    <div class="register-top-grid">
+                        <hr>
+                            <h3>INFORMACIÓN PERSONAL</h3>
+                            <br>
+                            <label>Nombre de Usuario: </label>
+                            <input type="text" name="nombre" id="miCampo1" required>
+                            <br><br>
+                            <label>Apellidos: </label>
+                            <input type="text" name="apellido" id="miCampo2" required>
+                            <br><br>
+                            <label>Correo Electrónico: </label>
+                            <input type="text" name="email" required placeholder="nombre@dominio.cl">
+                            <br><br>
+                            <label>Telefono: </label>
+                            <input type="text" name="fono" minlength="9" id="miCampo3" required>
+                            <br><br>
+                            <label>Fecha: </label>
+                            <input type="date" name="fecha" min="2018-01-01" required>
+                            <br><br>
+                            <label>Dirección </label>
+                            <input type="text" name="direccion" minlength="6" required>  
+                            <br><br>
+                            <label>Seleccione Región</label>
+                            <select type="option" name="region" required>
+                                <option value="">- Seleccione una opción -</option>
+                                <option value="1">Región de Arica y Parinacota</option>
+                                <option value="2">Región de Tarapacá</option>
+                                <option value="3">Región de Antofagasta</option>
+                                <option value="4">Región de Atacama</option>
+                                <option value="5">Región de Coquimbo</option>
+                                <option value="6">Región de Valparaíso</option>
+                                <option value="7">Región Metropolitana de Santiago</option>
+                                <option value="8">Región del Libertador General Bernardo O’Higgins</option>
+                                <option value="9">Región del Maule</option>
+                                <option value="10">Región del Ñuble</option>
+                                <option value="11">Región del Biobío</option>
+                                <option value="12">Región de La Araucanía</option>
+                                <option value="13">Región de Los Ríos</option>
+                                <option value="14">Región de Los Lagos</option>
+                                <option value="15">Región de Aysén del General Carlos Ibáñez del Campo</option>
+                                <option value="16">Región de Magallanes y la Antártica Chilena</option>
+                            </select>
+                        <br><br>
+                            <label>Seleccione su Genero</label>
+                            <select type="option" name="genero" required>
+                                <option value="">- Seleccione una opción -</option>
+                                <option value="1">Masculino</option>
+                                <option value="2">Femenino</option>
+                                <option value="3">Otro</option>
+                                <option value="4">Prefiero no decirlo</option>
+                            </select> 
+                    <br><br>
+                    <hr>
+                    <div class="clear">
+                    <h3>INFORMACIÓN DE INICIO DE SESIÓN</h3>
+                    <br>
+                    <div class="col-md-6 shop_box">
+                    <label>Contraseña:</label>
+                        <input type="password" id="password" name="password" minlength="6">
+                    </div>
+                        <div class="col-md-6 shop_box">
+                    <label>Reingresa contraseña:</label>
+                        <input type="password" name="password2" minlength="6">
+                    </div>
+                    <div class="clear"></div>
+                    <div class="button1"></div>
+                    <div class="clear"></div>
+
+                        <a class="news-letter" href="#"><hr>
+                            <label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i></i>Quiero recibir noticias y ofertas exclusivas</label>
+                        </a>
+                        <br>
+                    <div class="clear"></div>
+                    <div class="button1">
+                        <a href="#"><input type="submit" name="register" value="Registrarse"></a></div>
+                    <br>
+                    <hr>
+            </form>
+        </div>
     </div>
-    </div>
-    <hr>
+</div>
+</div>
+<hr>
 <!--Footer-->
 <div class="footer">
     <div class="container">

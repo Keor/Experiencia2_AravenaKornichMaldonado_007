@@ -407,6 +407,7 @@ fieldset.input input[type="submit"]:hover {
 	padding: 0.5em;
 	font-family: 'Open Sans', sans-serif;
 }
+
 .register-top-grid input[type="date"], .register-bottom-grid input[type="date"] {
 	border: 1px solid #EEE;
 	outline-color:#00BFF0;
@@ -415,7 +416,16 @@ fieldset.input input[type="submit"]:hover {
 	padding: 0.5em;
 	font-family: 'Open Sans', sans-serif;
 }
-.register-top-grid select[name="regiones"], .register-bottom-grid select[name="regiones"] {
+
+.register-top-grid select[name="region"], .register-bottom-grid select[name="region"] {
+	border: 1px solid #EEE;
+	outline-color:#00BFF0;
+	width: 96%;
+	font-size: 1em;
+	padding: 0.5em;
+	font-family: 'Open Sans', sans-serif;
+}
+.register-top-grid select[name="genero"], .register-bottom-grid select[name="genero"] {
 	border: 1px solid #EEE;
 	outline-color:#00BFF0;
 	width: 96%;
@@ -433,7 +443,7 @@ fieldset.input input[type="submit"]:hover {
 }
 .button1 {
 	float: right;
-	margin-top: 8%;
+	margin-top: 10%;
 }
 
 .checkbox {
@@ -779,3 +789,14 @@ li.youtube a span {
         margin: auto;
     }
 
+	.error-control {
+        border: 1px solid red;
+    }
+
+    label.error {
+        color: red;
+        width: 300px;
+        font-size: 0.8em;
+        margin-top: -5px;
+        margin-bottom: 10px;
+	}
