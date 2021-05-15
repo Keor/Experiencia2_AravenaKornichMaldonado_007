@@ -25,6 +25,20 @@
 });
 </script>
 
+<script>
+
+    function CambiarMayusculas()
+    {
+        var a = document.getElementById("nom");
+        a.value = a.value.toUpperCase();
+    }
+
+    function CambiaColor(a)
+    {
+        a.style.background = "orange";
+    }
+
+</script>
 </head>
 <body>
 
@@ -162,25 +176,25 @@
                             <br>
                             <div class="col-ml-6">
                             <label>Nombre de Usuario: </label>
-                            <input type="text" name="nombre" id="miCampo1" required>
+                            <input type="text" name="nombre" id="miCampo1" required id="nom" onchange="CambiarMayusculas()"  onfocus="CambiaColor(this)">
                             </div>
                             <div class="col-ml-6">
                             <label>Apellidos: </label>
-                            <input type="text" name="apellido" id="miCampo2" required>
+                            <input type="text" name="apellido" id="miCampo2" required  onfocus="CambiaColor(this)">
                             </div>
                             <br><br>
                             <label>Correo Electrónico: </label>
-                            <input type="text" name="email" required placeholder="nombre@dominio.cl">
+                            <input type="text" name="email" required placeholder="nombre@dominio.cl"  onfocus="CambiaColor(this)">
                             <br><br>
                             <label>Telefono: </label>
-                            <input type="text" name="fono" minlength="9" id="miCampo3" required>
+                            <input type="text" name="fono" minlength="9" id="miCampo3" required  onfocus="CambiaColor(this)">
                             <br><br>
                             <label>Fecha de Nacimiento: </label>
                             <input type="date" name="fecha" min="2018-01-01" required>
                             <br><br>
                             <div class="col-ml-6">
                             <label>Dirección </label>
-                            <input type="text" name="direccion" minlength="6" required>  
+                            <input type="text" name="direccion" minlength="6" required  onfocus="CambiaColor(this)">  
                             </div>
                             <div class="col-ml-6">
                             <label>Seleccione Región</label>
