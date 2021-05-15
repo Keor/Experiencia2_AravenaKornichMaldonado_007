@@ -23,6 +23,16 @@ html, body{
 
 }
 
+#scrollUp {
+    background-image: url(../images/top.png);
+    bottom: 20px;
+    right: 20px;
+    width: 38px;    
+    height: 38px;
+	background-size: cover; 
+}
+
+
 /*Body*/
 
 
@@ -284,7 +294,7 @@ fieldset.input input[type="submit"]:hover {
 }
 
 .fondo1{
-	background-image: url(gif3.gif);
+	background-image: url(../images/gif3.gif);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
