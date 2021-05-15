@@ -11,26 +11,25 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
 <script type="text/javascript" src="https://rawcdn.githack.com/franz1628/validacionKeyCampo/bce0e442ee71a4cf8e5954c27b44bc88ff0a8eeb/validCampoFranz.js"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="js/jquery.scrollUp.js"></script>
+
 <script>
     $(function(){
   $.scrollUp({
     scrollImg: false,
   });
 });
-</script>
-
-<script>
-
     function CambiarMayusculas()
     {
-        var a = document.getElementById("nom");
+        var a = document.getElementById("nombre");
+        var b = document.getElementById("apellido");
         a.value = a.value.toUpperCase();
+        b.value = b.value.toUpperCase();
     }
 
     function CambiaColor(a)
@@ -39,6 +38,7 @@
     }
 
 </script>
+
 </head>
 <body>
 
@@ -155,10 +155,10 @@
               }//messages
           }); 
            
-            $('#miCampo1').validCampoFranz(' abcdefghijklmnñopqrstuvwxyzáéíóúö');
-            $('#miCampo2').validCampoFranz(' abcdefghijklmnñopqrstuvwxyzáéíóúö');
-            $('#miCampo3').validCampoFranz ('0123456789'); 
-        
+            $('#nombre').validCampoFranz(' abcdefghijklmnñopqrstuvwxyzáéíóúö');
+            $('#apellido').validCampoFranz(' abcdefghijklmnñopqrstuvwxyzáéíóúö');
+            $('#fono').validCampoFranz ('0123456789');
+
         });//function
 
     </script>
@@ -175,26 +175,26 @@
                             <h3>INFORMACIÓN PERSONAL</h3>
                             <br>
                             <div class="col-ml-6">
-                            <label>Nombre de Usuario: </label>
-                            <input type="text" name="nombre" id="miCampo1" required id="nom" onchange="CambiarMayusculas()"  onfocus="CambiaColor(this)">
+                            <label for="nombre">Nombre de Usuario: </label>
+                            <input type="text" name="nombre" id="nombre" onchange="CambiarMayusculas()"  onfocus="CambiaColor(this)" required>
                             </div>
                             <div class="col-ml-6">
-                            <label>Apellidos: </label>
-                            <input type="text" name="apellido" id="miCampo2" required  onfocus="CambiaColor(this)">
+                            <label for="apellido">Apellidos: </label>
+                            <input type="text" name="apellido" id="apellido" onchange="CambiarMayusculas()" onfocus="CambiaColor(this)" required>
                             </div>
                             <br><br>
                             <label>Correo Electrónico: </label>
-                            <input type="text" name="email" required placeholder="nombre@dominio.cl"  onfocus="CambiaColor(this)">
+                            <input type="text" name="email" placeholder="nombre@dominio.cl"  onfocus="CambiaColor(this)" required>
                             <br><br>
                             <label>Telefono: </label>
-                            <input type="text" name="fono" minlength="9" id="miCampo3" required  onfocus="CambiaColor(this)">
+                            <input type="text" name="fono" minlength="9" id="fono" onfocus="CambiaColor(this)" required>
                             <br><br>
                             <label>Fecha de Nacimiento: </label>
                             <input type="date" name="fecha" min="2018-01-01" required>
                             <br><br>
                             <div class="col-ml-6">
                             <label>Dirección </label>
-                            <input type="text" name="direccion" minlength="6" required  onfocus="CambiaColor(this)">  
+                            <input type="text" name="direccion" minlength="6" onfocus="CambiaColor(this)" required>  
                             </div>
                             <div class="col-ml-6">
                             <label>Seleccione Región</label>
