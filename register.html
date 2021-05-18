@@ -43,133 +43,133 @@
 <body>
 
     <!--Cabecera -->
-    <header class="header">
-		<div class="container">
-			<div class="row">
-			  <div class="col-md-12">
-					 <div class="logo">
-						<a href="index.html"><img class="imglogo" src="images/logofo.jpg"/></a>
-					 </div>
-					 <div class="menu">
-						  <a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
-						    <ul class="nav" id="nav">
-						    	<li><a href="index.html">Home</a></li>
-						    	<li><a href="galeria.html">Tienda</a></li>
-                                <li><a href="qsomos.html">Quienes Somos</a></li>
-								<li><a href="contact.html">Contactanos</a></li>
-                                <a class="ausers" href="login.html"><img class="users" src="images/user.png"></a>
-                                <a href="#"><img class="carshop" src="images/cart.png"></a>
-								<div class="clear"></div>
-                                <script type="text/javascript" src="js/responsive-nav.js"></script>
-                            </ul>
-				    </div>								
-	    		    <div class="clear"></div>
-	    	    </div>
-			  </div>
-			</div>
-		</div>
-	</div>
-    <script>
-        $(function() 
-        {
-          $("#mi-formulario").validate({
-               rules: {
-                    nombre: {
-                        required: true,
-                    },
-
-                    apellido: {
-                        required: true,
-                    },
-                            
-                    email: {
-                        required: true,    
-                        email: true
-                    },
-
-                    region: {
-                        required: true,
-                    },
-
-                    genero:{
-                        required: true,
-                    },
-
-                    password: "required",
-                    fono: "required",
-                    fecha: "required",
-                    
-                    password2: {
-                    required: true,
-                    equalTo: "#password"
-                    }
-                  }, //rules
-            messages: {
+<header class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                    <div class="logo">
+                    <a href="index.html"><img class="imglogo" src="images/logofo.jpg"/></a>
+                    </div>
+                    <div class="menu">
+                        <a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
+                        <ul class="nav" id="nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="galeria.html">Tienda</a></li>
+                            <li><a href="qsomos.html">Quienes Somos</a></li>
+                            <li><a href="contact.html">Contactanos</a></li>
+                            <a class="ausers" href="login.html"><img class="users" src="images/user.png"></a>
+                            <a href="#"><img class="carshop" src="images/cart.png"></a>
+                            <div class="clear"></div>
+                            <script type="text/javascript" src="js/responsive-nav.js"></script>
+                        </ul>
+                </div>								
+                <div class="clear"></div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(function() 
+    {
+        $("#validaciones").validate({
+            rules: {
                 nombre: {
-                    required: 'Ingrese un Nombre*',
+                    required: true,
                 },
 
                 apellido: {
-                    required: 'Ingrese un Apellido*',
+                    required: true,
                 },
-
-                
+                        
                 email: {
-                    required: 'Ingrese un correo electrónico*',
-                    email: 'Formato de correo no válido'
-                },
-                password: {
-                    required: 'Ingrese una contraseña*',
-                    minlength: 'Caracteres insuficientes'
-                },
-                
-                fono:{
-                    required: 'Ingrese un número de celular*',
-                    minlength: 'Cantidad de digitos insuficiente'
-                },
-                
-                fecha:{
-                    required: 'Seleccione una fecha válida*',
-                    min: 'Fecha no corresponde'
+                    required: true,    
+                    email: true
                 },
 
-                direccion:{
-                    required: "Ingrese su Dirección*",
-                    minlength: "Igrese Dirección válida*"
-                },
-
-                region:{
-                    required: "Elija una opción valida*"
+                region: {
+                    required: true,
                 },
 
                 genero:{
-                    required: "Elija una opción valida*"
+                    required: true,
                 },
 
-
+                password: "required",
+                fono: "required",
+                fecha: "required",
+                
                 password2: {
-                required: 'Reingresa la contraseña*',
-                equalTo: 'Las contraseñas ingresadas no coinciden*',
-                minlength: 'Caracteres insuficientes*'
+                required: true,
+                equalTo: "#password"
                 }
-              }//messages
-          }); 
-           
-            $('#nombre').validCampoFranz(' abcdefghijklmnñopqrstuvwxyzáéíóúö');
-            $('#apellido').validCampoFranz(' abcdefghijklmnñopqrstuvwxyzáéíóúö');
-            $('#fono').validCampoFranz ('0123456789');
+                },
+        messages: {
+            nombre: {
+                required: 'Ingrese un Nombre*',
+            },
 
-        });//function
+            apellido: {
+                required: 'Ingrese un Apellido*',
+            },
 
-    </script>
+            
+            email: {
+                required: 'Ingrese un correo electrónico*',
+                email: 'Formato de correo no válido'
+            },
+            password: {
+                required: 'Ingrese una contraseña*',
+                minlength: 'Caracteres insuficientes'
+            },
+            
+            fono:{
+                required: 'Ingrese un número de celular*',
+                minlength: 'Cantidad de digitos insuficiente'
+            },
+            
+            fecha:{
+                required: 'Seleccione una fecha válida*',
+                min: 'Fecha no corresponde'
+            },
 
-    </header>
+            direccion:{
+                required: "Ingrese su Dirección*",
+                minlength: "Igrese Dirección válida*"
+            },
+
+            region:{
+                required: "Elija una opción valida*"
+            },
+
+            genero:{
+                required: "Elija una opción valida*"
+            },
+
+
+            password2: {
+            required: 'Reingresa la contraseña*',
+            equalTo: 'Las contraseñas ingresadas no coinciden*',
+            minlength: 'Caracteres insuficientes*'
+            }
+            }
+        }); 
+        
+        $('#nombre').validCampoFranz(' abcdefghijklmnñopqrstuvwxyzáéíóúö');
+        $('#apellido').validCampoFranz(' abcdefghijklmnñopqrstuvwxyzáéíóúö');
+        $('#fono').validCampoFranz ('0123456789');
+
+    });
+
+</script>
+
+</header>
     
 <!--Registro de usuario-->
 <div class="main">
     <div class="shop_top">
        <div class="container content">
-            <form id="mi-formulario" action="qsomos.html">
+            <form id="validaciones" action="qsomos.html">
                     <div class="register-top-grid">
                         <hr>
                             <h3>INFORMACIÓN PERSONAL</h3>
@@ -186,7 +186,7 @@
                             <label>Correo Electrónico: </label>
                             <input type="text" name="email" placeholder="nombre@dominio.cl"  onfocus="CambiaColor(this)" required>
                             <br><br>
-                            <label>Telefono: </label>
+                            <label>Teléfono: </label>
                             <input type="text" name="fono" minlength="9" id="fono" onfocus="CambiaColor(this)" required>
                             <br><br>
                             <label>Fecha de Nacimiento: </label>

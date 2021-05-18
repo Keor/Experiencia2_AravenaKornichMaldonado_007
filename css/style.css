@@ -32,7 +32,6 @@ html, body{
 	background-size: cover; 
 }
 
-
 /*Body*/
 
 
@@ -177,6 +176,7 @@ body a{
 	font-family: 'Open Sans', sans-serif;
 	outline: none;
 	font-size: 1em;
+	text-align: center;
 }
 .button1 input[name="register"] {
 	background: rgb(0, 0, 0);
@@ -241,6 +241,7 @@ fieldset.input input[type="submit"] {
 	font-family: 'Open Sans', sans-serif;
 	outline: none;
 	font-size:1em;
+
 }
 fieldset.input input[type="submit"]:hover {
 	background:#555;
@@ -259,9 +260,6 @@ fieldset.input input[type="submit"]:hover {
 
 
 /*--Main--*/
-
-
-
 
 .content-top{
 	padding:10% 0;
@@ -308,11 +306,15 @@ fieldset.input input[type="submit"]:hover {
 .login-page {
 	border-right: 1px solid #EEE;
 	padding-right: 4%;
-
-
+	
 }
+
+.login-usuario{
+	color: #FFF;
+}
+
 h4.title {
-	color:rgb(255, 255, 255);
+	color:#FFF;
 	margin-bottom: 0.5em;
 	font-size: 1em;
 	line-height: 1.2;
@@ -324,13 +326,13 @@ h4.title {
 	padding-bottom: 13px;
 }
 .login-page p {
-	color: rgb(255, 255, 255);
+	color:#FFF;
 	font-size: 0.85em;
 	line-height: 1.8em;
 }
 
 #login-form label {
-	color: rgb(255, 255, 255);
+	color:#FFF;
 	line-height: 2.8em;
 	font-size: 0.95em;
 	font-weight: 400;
